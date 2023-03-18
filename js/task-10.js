@@ -8,22 +8,18 @@ const fragment = document.createDocumentFragment();
 
 numberInput.addEventListener('input', (event) => {
     countEl = event.currentTarget.value;
-    console.log("countEL", countEl)
 });
 
 createEl.addEventListener('click', createBoxes);
 destroyEl.addEventListener('click', destroyBoxes);
 
-
-
-function createBoxes(amount) {
+function createBoxes() {
   for (let i = 0; i < countEl; ++i){
     const addEl = document.createElement('div');
     addEl.style.height = 30 + (10 * i) + 'px';
     addEl.style.width = 30 + (10 * i) + 'px';
     addEl.style.backgroundColor = getRandomHexColor();
   fragment.appendChild(addEl);
-
 };
 divEl.appendChild(fragment);
 };
