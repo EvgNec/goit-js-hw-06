@@ -27,6 +27,7 @@ divEl.appendChild(fragment);
 
 function destroyBoxes(){
   numberInput.value = 0;
+  countEl = 0;
   divEl.innerHTML = "";
 };
 

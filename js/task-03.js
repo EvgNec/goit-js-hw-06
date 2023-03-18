@@ -20,4 +20,8 @@ const elements = images.map(({ url, alt }) =>
 ).join("");
 listEl.insertAdjacentHTML("beforeend", elements);
 
+listEl.style.display = "flex";
+listEl.style.gap = "60px";
+listEl.style.listStyle = "none";
+listEl.style.flexWrap = 'wrap';
 
